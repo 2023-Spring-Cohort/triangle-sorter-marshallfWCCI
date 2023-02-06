@@ -12,5 +12,9 @@ public class TriangleSorterTest {
     public void threeEqualSidesIsAnEquilateralTriangle() {
         assertEquals("Equilateral", new TriangleSorter().analyze(3,3,3));
     }
+    @Test
+    public void test233() {
+        assertEquals("Isosceles", new TriangleSorter().analyze(2,3,3));
+    }
 }
 

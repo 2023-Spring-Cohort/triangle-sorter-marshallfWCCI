@@ -16,5 +16,13 @@ public class TriangleSorterTest {
     public void test233() {
         assertEquals("Isosceles", new TriangleSorter().analyze(2,3,3));
     }
+    @Test
+    public void test323() {
+        assertEquals("Isosceles", new TriangleSorter().analyze(3,2,3));
+    }
+    @Test
+    public void test332() {
+        assertEquals("Isosceles", new TriangleSorter().analyze(3,3,2));
+    }
 }
 

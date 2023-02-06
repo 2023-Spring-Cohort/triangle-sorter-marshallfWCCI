@@ -24,5 +24,9 @@ public class TriangleSorterTest {
     public void test332() {
         assertEquals("Isosceles", new TriangleSorter().analyze(3,3,2));
     }
+    @Test
+    public void test345() {
+        assertEquals("Right", new TriangleSorter().analyze(3,4,5));
+    }
 }
 

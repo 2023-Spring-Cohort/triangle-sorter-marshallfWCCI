@@ -16,6 +16,8 @@ public class TriangleSorter {
             return "Equilateral";
         if (sideA * sideA + sideB * sideB == sideC * sideC)
             return "Right";
+        if (sideC >= sideA + sideB)
+            return "Impossible";
         if (sideA == sideB || sideA == sideC || sideB == sideC)
             return "Isosceles";
         return "Scalene";

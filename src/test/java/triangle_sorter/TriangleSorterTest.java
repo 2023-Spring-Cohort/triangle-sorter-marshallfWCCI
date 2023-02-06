@@ -48,5 +48,19 @@ public class TriangleSorterTest {
     public void test236() {
         assertEquals("Impossible", new TriangleSorter().analyze(2,3,6));
     }
+
+    @Test
+    public void testRotations() {
+        for (int i = 0; i < 10; i++)
+            for (int j = 0; j <= i; j++)
+                for (int k = 0; k <= j; k++) {
+                    assertEquals(
+                            new TriangleSorter().analyze(i, j, k),
+                            new TriangleSorter().analyze(k, i, j));
+                    assertEquals(
+                            new TriangleSorter().analyze(i, j, k),
+                            new TriangleSorter().analyze(j, k, i));
+                }
+    }
 }
 

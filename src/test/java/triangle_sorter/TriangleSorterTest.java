@@ -44,5 +44,9 @@ public class TriangleSorterTest {
     public void test235() {
         assertEquals("Impossible", new TriangleSorter().analyze(2,3,5));
     }
+    @Test
+    public void test236() {
+        assertEquals("Impossible", new TriangleSorter().analyze(2,3,6));
+    }
 }
 
